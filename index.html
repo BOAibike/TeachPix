@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html lang="eng">
+    
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://fonts.cdnfonts.com/css/common-pixel" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+        <title>TeachPix</title>
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <span>About</span>
+                <a href="#"><i class="fa-regular fa-user" style="color: #f2dc5d;"></i></a>
+            </nav>
+        </header>
+
+        <main>
+            <!-- Hero section -->
+            <section id="hero">
+                <div class="wrapper">
+                    <div class="input">
+                        <input type="text" id="theme" placeholder="Enter your title" required>
+                        <br>
+                        <label for="type">Choose a theme</label>
+                        <select name="type" id="type" required>
+                            <option>Ancient Rome</option>
+                            <option>Ancient Egypt</option>
+                        </select>
+                        <br>
+                        <button id="generate-btn" class="btn">Generate!</button>                        
+                    </div>
+                </div>
+            </section>
+            <section id="generate-block">
+                <div class="wrapper">
+                    <div class="generate-box">
+                        <div class="generate-tools">
+                            <button class="btn tool"><i class="toolIcon fa-solid fa-palette" style="color: #ffffff;"></i></button>
+                            <button class="btn tool"><i class="toolIcon fa-solid fa-paperclip" style="color: #ffffff;"></i></button>
+                            <button class="btn tool"><i class="toolIcon fa-solid fa-arrow-down" style="color: #ffffff;"></i></button>
+                            <button class="btn tool"><i class="toolIcon fa-solid fa-copy" style="color: #ffffff;"></i></button>
+                            <button class="btn tool"><i id="random" class="toolIcon fa-solid fa-dice-three" style="color: #ffffff;"></i></button>
+                        </div>
+                        <div class="generate-toolbar">
+                            <i class="toolbar fa-regular fa-circle" style="color: #27285c;"></i>
+                        </div>
+                        <div id="generate-window">
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
+    <script  src="main.js"></script>
+</html>
