@@ -138,7 +138,7 @@ label {
     margin: 0.5rem 0;
 }
 .toolIcon:hover {
-    background-color: #27285C;
+    background-color: #c4a300;
     border-radius: 29px;
     box-shadow: 
                 2px 2px 2px #c4a300,
@@ -154,23 +154,30 @@ label {
     margin-top: 20rem;
 }
 .generate-toolbar {
+    display: flex;
     width: 30%;
     background-color: aliceblue;
 }
-.toolbar {
-    background-color: aliceblue;
+.right-side {
+    width: 15%;
+    text-align: center;
+    margin-left: 0.5rem;
 }
-.toolbar:active {
-    border-radius: 29px;
-    box-shadow: 
-                2px 2px 2px #c4a300,
-                10px 1px 12px #c4a300,
-                2px 2px 10px #c4a300,
-                2px 2px 3px #c4a300,
-                inset 2px 2px 10px #c4a300,
-                inset 2px 2px 10px #c4a300,
-                inset 2px 2px 10px #c4a300,
-                inset 2px 2px 10px #c4a300;
+.tools {
+    width: 70%;
+    display: grid;
+    grid-template-columns: auto auto;
+    height: 10rem;
+    margin: 2rem 0 0 1rem;
+}
+.drawIcon {
+    color: #27285c
+}
+.drawIcon:hover {
+    cursor: pointer;
+}
+.drawIcon:active {
+    color: #f2dc5d;
 }
 #generate-window {
     height: auto;
@@ -178,4 +185,25 @@ label {
     position: relative;
     float: right;
     background-color: white;
+}
+.close-btn {
+    font-size: 2rem;
+    display: block;
+    color: #27285C;
+    margin: 1rem 0.5rem;  
+}
+.close-btn:hover {
+    cursor: pointer;
+    color: #f2dc5d;
+}
+.drag-btn {
+    font-size: 2rem;
+    margin: 10rem 0 0 0.5rem;
+    color: #27285C;
+}
+.drag-btn:hover {
+    cursor: pointer;
+}
+.drag-btn:active {
+    cursor: grabbing;
 }
